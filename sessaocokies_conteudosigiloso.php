@@ -1,0 +1,332 @@
+<?php
+ob_start();
+?>
+<html lang="pt-BR">
+
+
+
+
+
+<?php
+session_start();
+if(!isset($_SESSION["usuario"])){
+echo"erro";
+exit();
+}
+echo"ola               ".        $_SESSION["usuario"];
+echo"<br><br>";
+
+
+
+?>
+<body>
+    <header>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="flex.css"> 
+   <!-- <link rel="stylesheet" href="style.css" >-->
+  <!-- <link rel="stylesheet" href="style-aula.css" />-->
+
+    <div class="logo">
+        <div class="logotipo">        
+        
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Sistema de gerenciamento de salões de beleza</p>
+    </div>
+    </div>
+
+    <nav>    
+        <ul>
+            <h1><li><a href="index.html">HOME</a></li></h1>
+            <h1><li><a href="index.html#servicos">SERVIÇOS</a></li></h1>
+            <h1><li><a href="index.html#agendamentos">AGENDAMENTOS</a></li></h1>
+              <h1><li><a href="loja.php">LOJA</a></li></h1>
+            <h1><li><a href="contato.html">CONTATO</a></li></h1>
+            <h1><li><a href="func.html">FUNC</a></li></h1>
+            <h1><li><a href="pagina_administrador.html">ADMINISTRADOR</a></li></h1>
+            <h1><li><a href="login.html">LOGIN</a></li></h1>
+        </ul>  
+    </nav>        
+</header>
+
+
+  
+
+
+<main>
+    <!--CAROSSEL COM IMAGENS-->
+    <div class="slider">
+        <div class="slides">
+    
+    <!--BOTÕES DO SLIDE-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+    <!--IMAGENS DO SLIDE-->
+            <div class="slide first">
+                <img src="imagens\1.jpg" alt="imagem 1"/>
+            </div>
+            <div class="slide">
+                <img src="imagens\2.jpg" alt="imagem 2"/>
+            </div>
+            <div class="slide">
+                <img src="imagens\3.jpg" alt="imagem 3"/>
+            </div>
+            <div class="slide">
+                <img src="imagens\4.jpg" alt="imagem 4"/>
+            </div>
+    
+    <!--BARRA DE NAVEGAÇÃO DOS BOTÕES-->
+            <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+        
+            </div>
+    
+        </div>
+    
+    <!--REFERÊNCIAS DOS BOTÕES-->
+        <div class="manual-navigation">
+            
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+    
+        </div>
+
+    </div>
+
+        <section id="home">
+            <div class="about">
+            <h1>Sistema de gerenciamento de salões de beleza</h1><br><br><br>
+            <p> Olá! Sou Lizi Santos, uma apaixonada cabeleireira e empreendedora com mais de 15 anos de experiência no cenário da beleza em São Paulo. Com 37 anos e uma trajetória marcada pela dedicação, inovação e
+            destaque no cenário paulista. Desde os 16 anos, minha jornada é de aprimoramento constante,
+            trabalhando com renomados profissionais e absorvendo conhecimento. Fazemos blindagem, selamento, escova,
+            depilação, lavagem e mais! Espero que você tenha uma boa experiência com nosso salão, por favor, faça seu
+            agendamento por nosso site.
+            </div>
+    
+            <!--<div class="image">
+                <img src="imagens\salão1.jpg" alt="Imagem do salão">
+            </div>-->
+        </section>
+<section >
+       <div class="bola"></div>
+   
+</section>
+        
+        <section class="eventos">
+            <h2 class="eventos__titulo">Serviços</h2>
+            <ul class="eventos__lista">
+                <li class="eventos__item">
+                    <img src="./imagens/escovinha.jpg"width="200px" alt="Velas em fundo preto.">
+                    <h3>escovinha</h3>
+                    <h4>R$100,00</h4>
+            
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/manicure3.jpg"width="200px" alt="Pessoas em uma festa">
+                    <h3>Manicure</h3>
+                    <h4>R$50,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/Blindagem.jpg"width="200px" alt="Sala de cinema">
+                    <h3>Tintura</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/corte.jpg" width="200px" alt="Corrida de bicicleta">
+                    <h3>Corte</h3>
+                    <h4>R$ 50,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/Blindagem.jpg" width="200px" alt="Pikachu gigante">
+                    <h3>Blindagem</h3>
+                    <h4>R$ 100,00</h4>
+                
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/realinhamento.jpg" width="200px"alt="Show a céu aberto">
+                    <h3>Realinhamento</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/tratamento.jpg" width="200px"a alt="Festival de balões">
+                    <h3>Tratamento</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/depilacao2.jpg " width="200px"  height="250px" alt="Sala de cinema">
+                    <h3>Depilação</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/maquiagem.jpg " width="200px"  height="250px" alt="Sala de cinema">
+                    <h3>Maquiagem</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+                <li class="eventos__item">
+                    <img src="./imagens/limpeza.jpg " width="200px"  height="250px" alt="Sala de cinema">
+                    <h3>Limpeza de pele</h3>
+                    <h4>R$ 100,00</h4>
+                    
+                    
+                </li>
+            
+            </ul>
+        </section>
+        <!--<section id="servicos"><br><br><br><br><br>
+           <center> <h1>Serviços</h1></center>
+           <center>
+            <br>
+           <table>
+            <tr><td>
+            <tr><td>   corte de cabelo masc </td><td class="direita">         R$15,00  </td></tr>
+              <tr><td>  corte de cabelo fem  </td><td class="direita">        R$15,00  </td></tr>              
+                  <tr><td>Manicure   </td><td class="direita">R$30,00</td></tr>                                              
+                  <tr><td>  Escovinha</td><td class="direita">
+                                       R$60,00 </td></tr>                    <tr><td>      Tintura  </td><td class="direita">R$80,00</td></tr>                                
+              <tr><td> Barba/bigode</td><td class="direita" >R$40,00</td></tr>
+                <tr><td>Pedicure </td><td class="direita">R$30,00</td></tr>
+                <tr><td> Sobrancelha  </td ><td class="direita">R$40,00</td></tr>                                                 
+    </table></td></center>
+        </section>-->  
+        <section id="agendamentos">
+            <br><br>
+            
+    
+    <h1 align="center">Agendamentos</h1>
+    
+    <form  method="POST" action="agendamento.php">
+        <label align='left'>Cliente:</label><br>
+        <input type="text" name="nome" placeholder= "Nome Completo" id="nome">
+        <label>Serviço:</label><br>
+        <input type="text" name="servico">
+        <label>Funcionário:</label><br>
+        <input type="text" name="funcionario">
+        <label>Endereço:</label><br>
+        <input type="text" name="endereco">
+        <label for="senha">Horário:</label><br>
+            <input type="text" name="horario" size="40">
+            <label for="celular">Telefone:</label><br>
+            <input type="fhone" name="telefone" placeholder=(99)9999-9999  pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$” maxlength="50">
+            <div id="container">
+                <div >
+            <label for="data">Data:</label><br>
+           
+            <!--O código abaixo é para formatação de texto do campo "Telefone"-->
+
+            <script>
+                const celularInput = document.getElementById("celular");
+        
+                celularInput.addEventListener("input", function (e) {
+                    let input = e.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+                    let formatted = "";
+        
+                    if (input.length <= 10) {
+                        // Formato para números com 8 dígitos no final
+                        formatted = input.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+                    } else {
+                        // Formato para números com 9 dígitos no final
+                        formatted = input.replace(/^(\d{2})(\d{5})(\d{0,4})$/, "($1) $2-$3");
+                    }
+        
+                    e.target.value = formatted; // Atualiza o campo com o número formatado
+                });
+            </script>
+            
+    
+      <input class="dha-container" type="date" name="data">  <button>Consultar vagas</button>
+
+
+</div>
+    
+    </div>
+                
+            <div id="container">
+    
+            <input type="submit" name="bt-enviar" value="Enviar">
+    <input type="reset" value="Cancelar">
+
+            
+    
+        </div>
+    
+
+    </form>
+   <center> <a href="listarsalao.php">listar</a><br></center>
+   <center><a href="pesquisar.html">pesquisar</a></center><br>
+        </section>
+        <br><br><br> <br><br><br> <br><br><br>
+
+
+
+
+
+
+
+</main>
+        
+ <br><br><br> <br><br><br> <br><br><br>
+  <br><br><br> <br><br><br> <br><br><br>
+   <br><br><br> <br><br><br> <br><br><br>
+    <br><br><br> <br><br><br> <br><br><br>
+
+ <br><br><br> <br><br><br> <br><br><br>
+  <br><br><br> <br><br><br> <br><br><br>
+   <br><br><br> <br><br><br> <br><br><br>
+    <br><br><br> <br><br><br> <br><br><br>
+     <br><br><br> <br><br><br> <br><br><br>
+
+       <br><br><br> <br><br><br> <br><br><br>
+       <br><br><br> <br><br><br> <br><br><br>
+       <br><br><br> <br><br><br> <br><br><br>
+       <br><br><br> <br><br><br> <br><br><br>
+
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+<br><br><br> <br><br><br> <br><br><br>
+    <footer> 
+       <p> <span>Todos os direitos reservados | <b>Anderson & Olenice </b></p></span>
+    
+<!--
+<a href="https://api.whatsapp.com/send?phone=5561999085645"><div class="botao">
+        <img src="imagens/zapp.jpeg" alt="whatsapp ícone">
+        <span class="tooltip">Fale conosco pelo Whatsapp!</span>
+    </div></a>
+            -->
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

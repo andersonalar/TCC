@@ -1,0 +1,24 @@
+/* Padrão */
+
+
+/*
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*/
+
+header{
+
+  margin-top: 40px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+/* KeyFrames e Animações */
+
